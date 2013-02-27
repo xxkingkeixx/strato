@@ -1,0 +1,489 @@
+
+*+html body  			{}		/*	IE	*/
+.className>nodeName		{}		/*	FF	*/
+
+/*
+::selection				{color: #000; background: #F90}
+::-moz-selection		{color: #000; background: #F90}
+*/
+
+.sf *					{outline: none;}
+
+*						{cursor: default;}
+body					{overflow: hidden; border: 0px; margin: 0px;}
+a						{cursor: pointer; text-decoration: none;}
+acronym					{cursor: help; border-bottom: 0px; font-weight: bold;}
+fieldset				{border: #CCC 1px solid; margin: 2px 2px 3px 2px;}
+legend					{}
+hr						{border: 0px; border-top: #BBB 1px solid; border-bottom: #FFF 1px solid; margin: 10px 0px 10px 0px;}
+*+html hr				{margin: 0px;}
+textarea				{margin: 0px; border: 0px;}
+*+html textarea			{margin: -1px 0px -1px 0px;}
+.i48_image				{width: 48px; height: 48px;}
+.hideMe					{display: none;}
+
+.chx_diz				{z-index: 2100; position: absolute; top: 0px; left: 0px;}
+.chx_diz div			{z-index: 2000; position: absolute;}
+/*
+ background: #F00; -moz-opacity: .3;
+*/
+
+.hideMe_frm				{position: absolute; top: 10px; left: 10px; width: 300px; height: 500px; background: white; z-index: 20000;}
+
+
+
+/*	NOTIFICATION	*/
+._Nb				{position: absolute; top: -105px; left: 100%; margin: 0px 0px 0px -253px; display: none;}
+._Nb *				{font-family: Arial;}
+._Nb b\:ts,
+._Nb b\:tm,
+._Nb b\:te,
+._Nb b\:bs,
+._Nb b\:bm,
+._Nb b\:be			{background: url(/gui/images/hrzn.png) 0px 50px no-repeat;}
+
+._Nb b\:ts			{display: block; background-position: 0px 0px; padding: 0px 0px 0px 18px; height: 12px; overflow: hidden;}
+._Nb b\:tm			{display: block; background-position: 0px -71px; background-repeat: repeat-x;}
+._Nb b\:te			{display: block; background-position: 100% -12px; padding: 0px 18px 0px 0px;}
+._Nb b\:ml			{display: block; background: url(/gui/images/ntfy_vert_l.png) 0px 0px repeat-y; padding: 0px 0px 0px 18px;}
+._Nb b\:mm			{display: block; background: url(/gui/images/ntfy_bg.png); height: 46px; width: 220px; position: relative;}
+._Nb b\:mr			{display: block; background: url(/gui/images/ntfy_vert_r.png) 100% 0px repeat-y; padding: 0px 18px 0px 0px;}
+._Nb b\:bs			{display: block; background-position: 0px -48px; padding: 0px 0px 0px 18px;}
+._Nb b\:bm			{display: block; background-position: 0px -84px; background-repeat: repeat-x; height: 23px;}
+._Nb b\:be			{display: block; background-position: 100% -25px; padding: 0px 18px 0px 0px; height: 23px;}
+
+._Nb b\:i48			{position: absolute; top: -2px; left: -2px;}
+._Nb span			{position: absolute; overflow: hidden; width: 170px; text-align: left;}
+._Nb .head			{top: 2px; left: 52px; height: 18px; font-weight: bold; font-size: 14px;}
+._Nb .body			{top: 19px; left: 52px; height: 32px; font-size: 11px;}
+
+
+
+/*	COLOR TABLE	*/
+.appworkspace			{background: #CCC;}
+.buttonshadow			{background: #d8d8d8; color: #666;}
+.buttonface				{background: #EEE;}
+.buttonhighlight		{background: #f2f2f2;}
+
+/*	CLOUDO ICONS	*/
+.i16_cloudo				{background: url(/gui/icon/cloudo.png) -72px 0px no-repeat;}
+.i24_cloudo				{background: url(/gui/icon/cloudo.png) -48px 0px no-repeat;}
+.i48_cloudo				{background: url(/gui/icon/cloudo.png) 0px 0px no-repeat;}
+
+
+.loading				{width: 16px; height: 16px;}
+.inset .inset			{overflow: hidden;}
+
+.modal_screen			{position: absolute; top: 0px; left: 0px; background: #000; -moz-opacity: .55; -webkit-opacity: .55; filter: alpha(opacity=55); opacity: .55;}
+.modal_screen_off		{-moz-opacity: 0; -webkit-opacity: 0; filter: alpha(opacity=0);}
+
+/**/
+.chx_input				{position: absolute; width: 110px; z-index: 998; overflow: auto; display: none; margin: -3px 0px 0px -2px;}
+*+html .chx_input		{margin: -4px 0px 0px -4px;}
+.chx_input b\:ts		{display: block; overflow: hidden; padding: 0px 0px 0px 8px; height: 8px;}
+.chx_input b\:tm		{display: block;}
+.chx_input b\:te		{display: block; padding: 0px 8px 0px 0px;}
+
+.chx_input b\:ml		{display: block; padding: 0px 0px 0px 8px;}
+.chx_input b\:mm		{display: block; overflow: hidden; position: relative; margin: 0px -3px 0px -3px; border: #000 2px solid; position: relative; top: -5px; left: -2px;}
+.chx_input input		{display: block; border: 0px; background: #FFF; width: 100%; padding: 2px 0px 1px 3px; height: 17px; margin-top: -2px;}
+.chx_input b\:mr		{display: block; padding: 0px 11px 0px 0px; height: 11px;}
+
+.chx_input b\:bs		{display: block; overflow: hidden; padding: 0px 0px 0px 8px; height: 8px;}
+.chx_input b\:bm		{display: block;}
+.chx_input b\:be		{display: block; padding: 0px 8px 0px 0px;}
+
+.chx_input				{overflow: hidden;}
+.chx_input *			{}
+*+html .chx_input b\:mm	{top: -4px;}
+*+html .chx_input input	{margin: 0px 0px -1px 2px;}
+*+html input			{margin: -1px 0px -1px 0px;}
+
+#chx_bg					{display: block; width: 100%; height: 100%; z-index: 2; position: absolute; top: 0px; left: 0px;}
+#chx_bg img				{margin-bottom: -10px; background: url(/gui/bg/suse/time_for_lunch.jpg);}
+.vCloudo				{color: #8c6239;}
+#chx_wa1,
+#chx_wa2,
+#chx_wa3,
+#chx_wa4				{display: none; width: 100%; height: 1px; z-index: 31; position: absolute; top: 0px; left: 0px;}
+#chx_wa1				{display: block;}
+#chx_icon				{display: block; width: 100%; height: 1px; position: absolute; z-index: 30;}
+#chx_icon gui\:icon_48	{position: absolute;}
+#chx_ctxt				{position: absolute; top: 0px; left: 0px; width: 100%; height: 0px; z-index: 999;}
+#chx_ctxt .chx_menu		{position: absolute; left: -9999px;}
+.chx_ghost,
+#chx_ghost				{position: absolute; top: 0px; left: -9999px; z-index: 997; border: #000 1px dotted;}
+#chx_ghost.xdfs_ghost	{-moz-opacity: .5; -webkit-opacity: .5; border: 0px!important;}
+.chx_ghost.clone_ghost	{-moz-opacity: .5; -webkit-opacity: .5; border: 0px!important;}
+.chx_ghost.self_ghost	{border: 0px!important;}
+
+.chx_ghost .i16_tree_plus,
+.chx_ghost .i16_tree_minus {background-position: 50px 0px!important;}
+
+*+html .web_safe .inset	{width: 288px!important; height: 254px!important;}
+
+gui\:link *,
+gui\:link				{color: #369; cursor: pointer;}
+gui\:link.over			{color: #00F; text-decoration: underline;}
+gui\:link.down			{color: #000;}
+gui\:link.up			{color: #00F;}
+gui\:link.dsbld			{cursor: default;}
+
+
+/*	FINDER DEF	*/
+#osbox .loc_bar			{margin: 0px 2px 1px 2px;}
+#finder .loc_bar		{height: 26px; margin: 0px 0px 3px 0px;}
+#finder .loc_row		{padding: 2px 0px 0px 0px;}
+#finder .loc_add		{width: 70px; padding: 4px 0px 0px 4px; display: block; left: 0px!important;}
+#finder .loc_fld		{margin: 0px 9px 3px 2px;}
+#osbox .loc_bar b\:i16,
+#finder .loc_fld b\:i16 {margin: 2px 4px 0px 0px; float: left; left: 2px;}
+
+#finder .loc_search gui\:tool16,
+#finder .loc_reload gui\:tool16	{background: transparent; margin: 2px 2px 0px 0px; padding: 0px; border: 0px;}
+#finder .loc_search b\:i16,
+#finder .loc_reload b\:i16		{margin: 0px!important; left: 0px;}
+
+
+/*	PROGRESS	*/
+b\:progress				{display: block; position: relative; overflow: hidden;}
+b\:progress b\:s		{display: block;}
+b\:progress b\:e		{display: block;}
+b\:progress b\:m		{display: block;}
+b\:progress b\:bar		{display: block; position: relative;}
+b\:progress b\:txt		{position: absolute; top: 2px; width: 99%; text-align: center;}
+b\:progress b\:txt.invrt{}
+b\:progress b\:st		{position: absolute; left: 0px;}
+b\:progress b\:se		{float: right; overflow: hidden; position: relative;}
+
+
+/*	REGULATOR VERTICAL	*/
+gui\:vreg				{float: left; position: relative;}
+gui\:vreg b\:s,
+gui\:vreg b\:e,
+gui\:vreg b\:m,
+gui\:vreg b\:bs,
+gui\:vreg b\:bb			{float: left; height: 100%; line-height: 1px;}
+gui\:vreg b\:s			{}
+gui\:vreg b\:e			{}
+gui\:vreg b\:m			{background-repeat: repeat-y; cursor: n-resize;}
+gui\:vreg b\:bs			{position: relative;}
+gui\:vreg b\:bb			{background-repeat: repeat-y; cursor: n-resize;}
+gui\:vreg gui\:handle	{position: absolute; cursor: n-resize;}
+gui\:vreg gui\:handle.over,
+gui\:vreg gui\:handle.down,
+gui\:vreg gui\:handle.up{}
+
+/*	REGULATOR HORIZONTAL	*/
+gui\:hreg				{float: left; position: relative;}
+gui\:hreg b\:s,
+gui\:hreg b\:e,
+gui\:hreg b\:m,
+gui\:hreg b\:bs,
+gui\:hreg b\:bb			{float: left; width: 100%; line-height: 1px;}
+gui\:hreg b\:s			{}
+gui\:hreg b\:e			{}
+gui\:hreg b\:m			{background-repeat: repeat-x; cursor: e-resize;}
+gui\:hreg b\:bs			{width: 0%; position: relative;}
+gui\:hreg b\:bb			{background-repeat: repeat-x; cursor: e-resize;}
+gui\:hreg gui\:handle	{position: absolute; cursor: e-resize;}
+gui\:hreg gui\:handle.over,
+gui\:hreg gui\:handle.down,
+gui\:hreg gui\:handle.up{}
+
+
+/*	TREE DEF	*/
+.inset.tree_view		{padding: 1px 1px 1px 2px; overflow: auto;}
+gui\:tree				{display: block; clear: left; height: 17px; padding: 1px 0px 0px 0px;}
+gui\:tree.over			{}
+gui\:tree.over b\:title	{text-decoration: underline;}
+gui\:tree.down			{}
+gui\:tree.down b\:title	{background: #DDD;}
+gui\:tree.up			{}
+gui\:tree.up b\:title	{}
+
+gui\:tree.down .chx_tree_cc{color: #FFF;}
+gui\:tree .chx_tree_cc	{color: #00F;}
+.chxw_blur gui\:tree.down b,
+.chxw_blur gui\:tree.down .chx_tree_cc	{color: #555!important;}
+
+b\:tree nobr			{}
+b\:tree b\:title		{padding: 1px 3px 1px 2px; margin: 0px 0px 0px 2px;}
+b\:tree b\:title b		{margin-left: 2px;}
+b\:tree b\:i16			{margin: 0px; top: -1px;}
+b\:branch				{float: left; clear: both; padding: 1px 0px 0px 17px; margin: 0px; display: none;}
+
+*+ html b\:tree b\:i16	{top: 0px;}
+*+ html gui\:tree b\:title{position: relative; top: -1px;}
+
+
+/*	NAV DEF	*/
+gui\:nav				{padding: 3px 16px 0px 3px; height: 16px; float: left;}
+gui\:nav.over			{}
+gui\:nav.down			{}
+gui\:nav.up				{}
+
+
+/*	SELECT DEF	*/
+#chx_slct				{position: absolute; top: -999px; z-index: 989;} 
+#chx_slct .slct_inner	{height: auto; overflow-y: auto; overflow-x: hidden;}
+#chx_slct gui\:option	{display: block; white-space: nowrap;}
+#chx_slct gui\:option.over {}
+#chx_slct gui\:option.down {}
+
+html.sf gui\:option		{line-height: 14px;}
+
+gui\:select,
+gui\:select gui\:option	{white-space: nowrap; overflow: hidden;}
+
+gui\:select				{float: right;}
+gui\:select gui\:option	{float: left;}
+gui\:select b\:arrow	{float: left;}
+
+
+/*	LIST DEF	*/
+.colrow					{overflow: hidden;}
+.crinner				{width: 99999px; height: 22px; overflow: hidden;}
+gui\:grid,
+gui\:list				{display: block;}
+gui\:colcap				{float: left;}
+gui\:colcap span		{display: block;}
+.grid .inset,
+.list .inset			{overflow: auto;}
+gui\:row				{float: left; clear: both;}
+grid\:cell,
+list\:cell				{float: left; padding: 1px 2px 2px 1px; height: 17px; overflow: hidden;}
+grid\:cell span,
+list\:cell span			{float: left; height: 13px; width: 100%; padding: 3px 4px 2px 0px; font-size: 11px; white-space: nowrap;}
+grid\:cell b\:i16,
+list\:cell b\:i16		{float: left; margin: -2px 2px 0px 1px;}
+
+/*	GRID DEF	*/
+grid\:cell				{border-bottom: 1px solid; border-right: 1px solid; border-color: #CCC;}
+
+/*	TREE GRID	*/
+.tree_list gui\:row		{background: #EEE; color: #777; border-top: #FFF 1px solid; border-bottom: #DDD 1px solid;}
+.tree_list gui\:row.over{background: #E5E5E5!important; border-color: #F3F3F3 #BBB #BBB #F3F3F3;}
+.tree_list gui\:row.down{background: #DEDEDE!important; border-color: #EEE #BBB #BBB #EEE; color: #000; font-weight: bold;}
+
+.tree_list b\:children gui\:row			{background: #FFF; border: 0px;}
+.tree_list b\:children gui\:row.over	{background: #EEE!important;}
+.tree_list b\:children gui\:row.down	{background: #DEDEDE!important;}
+
+
+/*	TASK DEF	*/
+#chx_taskbar			{width: 100%;}
+.task_top,
+.task_bottom			{position: absolute; z-index: 950;}
+.task_top table,
+.task_bottom table		{position: absolute;}
+.taskbar				{z-index: 970;}
+.gDock,
+.td_quix				{display: none;}
+
+gui\:quickbar			{float: left; overflow: hidden; position: relative;}
+gui\:quick				{float: left;}
+gui\:quix				{float: left; overflow: hidden;}
+gui\:quix b\:quix		{}
+
+gui\:appbar				{}
+gui\:app				{float: left;}
+gui\:app span			{float: left; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+gui\:app b\:i16			{float: left;}
+gui\:app span:after		{content: '...';}
+
+gui\:tray b\:i16		{float: left;}
+gui\:tray gui\:time		{float: right;}
+
+/*	STARTMENU DEF	*/
+#chx_startmenu			{z-index: 951; position: relative;}
+.chx_smb_left,
+.chx_smb_right,
+.chx_sm_body			{overflow: hidden; position: relative;}
+.chx_smb_i48			{display: none;}
+.sm_settings			{display: none;}
+.sm_run_input			{display: none;}
+.chx_smb_right gui\:smr_24	{white-space: nowrap; overflow: hidden;}
+
+/*	MENU DEF	*/
+.chx_mdivider			{height: auto!important;}
+.chx_mdivider td		{}
+.chx_mdivider div		{line-height: 0px; height: 0px;}
+.chx_mhotkey			{font-style: italic;}
+
+/*	WIN DEF	*/
+.twin,
+.chxw_blur,
+.chxw_focus				{position: absolute;}
+.twinframe,
+.winframe				{border-collapse: collapse;}
+
+.frm_dvdr_h				{height: 2px; overflow: hidden; cursor: n-resize; z-index: 13;}
+.frm_dvdr_h.down		{z-index: 14;}
+.frm_dvdr_v				{width: 2px; overflow: hidden; cursor: e-resize; z-index: 13;}
+.frm_dvdr_v.down		{z-index: 14;}
+/*
+.chxw_blur .wincontent div,
+.chxw_blur .wincontent span,
+.chxw_blur .wincontent textarea		{overflow: hidden!important;}
+*/
+.twincontent,
+.wincontent				{position: relative; overflow: hidden;}
+.twinbody,
+.winbody				{position: relative;}
+*+html .twinbody,
+*+html .winbody			{position: static;}
+.wincapt b\:i16			{float: left;}
+.frmresize				{height: 100%; width: 3px; overflow: hidden; font-size: 1px; -moz-user-select: none; -webkit-user-select: none;}
+.menuinner				{position: relative;}
+.twinstatrsz,
+.winstatrsz				{cursor: se-resize;}
+.wzrd_view				{padding: 8px 8px 8px 8px;}
+
+/*	TINY WIN DEF	*/
+.twintdchrome			{white-space: nowrap;}
+.twincortl				{float: left;}
+.twincortr				{float: right;}
+
+gui\:select,
+gui\:label,
+gui\:button,
+gui\:btn_22,
+gui\:i48,
+gui\:i24,
+gui\:i16,
+gui\:colcap,
+gui\:colcap span,
+gui\:nav,
+gui\:row *,
+gui\:tree *,
+gui\:tab *,
+gui\:hreg,
+gui\:hreg *,
+gui\:vreg,
+gui\:vreg *,
+gui\:box,
+gui\:box *,
+gui\:tool_arr,
+gui\:sel_arr,
+b\:i24,
+b\:i16,
+#chx_bg,
+#chx_icon *,
+#chx_taskbar,
+#chx_ctxt,
+#chx_slct,
+#chx_ghost,
+.inset.tree *,
+.frm_dvdr_h,
+.frm_dvdr_v,
+.tabbar,
+.twintrchrome,
+.twintrbottom,
+.twinstat,
+.twinstat *,
+.twinstatrsz,
+.wintrchrome,
+.wintrbottom,
+.winstat,
+.winstat *,
+.twinstatrsz,
+.winstatrsz,
+.menurow,
+.toolrow16,
+.chx_smb_left,
+.chx_smb_right,
+.chx_smb_i48,
+.toolrow				{-moz-user-select: none; -webkit-user-select: none;}
+
+.chx_mhandle,
+.chx_thandle,
+.chx_tdivider			{float: left;}
+
+.inset					{}
+.inset .inset			{background: #FFF;}
+
+/*	TOOL DEF	*/
+.chx_thandle,
+.chx_tdivider,
+gui\:tool_arr,
+gui\:tool,
+gui\:tool16				{float: left;}
+.toolinner,
+.chx_thandle,
+.chx_tdivider			{overflow: hidden;}
+
+.dsbld_input_tool		{background: #F1F1F1!important;}
+
+
+/*	TOOLBAR INPUT FIELD	*/
+.toolrow_16 input.fld_input	{background: transparent; border: 0px!important; padding: 3px 0px 0px 2px;}
+.toolrow_16 .inset			{height: 21px; margin: 0px 2px 0px 2px;}
+.toolrow_16 .inset .inset	{height: 19px; margin: 0px; position: relative;}
+.toolrow_16 .input_bar input{margin: 0px 21px 0px 0px; color: #999;}
+.toolrow_16 .fld_icon		{position: absolute; top: 0px; left: 100%; margin: 0px 0px 0px -20px;}
+
+.toolrow_16 .fld_icon gui\:tool16		{background: transparent; border-left: #FFF 1px solid; padding: 2px 0px 0px 1px;}
+.toolrow_16 .fld_icon gui\:tool16.over	{background: #EEE; border-color: #DDD;}
+.toolrow_16 .fld_icon gui\:tool16.down	{background: #DDD; border-color: #CCC;}
+.toolrow_16 .fld_icon gui\:tool16.up	{background: #EEE; border-color: #DDD;}
+
+
+/*	TOOLBAR INPUT SELECT	*/
+.toolrow_16 .select_bar input {margin: 0px 15px 0px 0px;}
+.toolrow_16 .fld_sel_arr	{position: absolute; top: 0px; left: 100%; margin: 0px 0px 0px -15px;}
+.toolrow_16 gui\:sel_arr	{float: right;}
+
+.toolrow_16 input.dsbld		{color: #777;}
+
+/*	VERTICAL TOOLS	*/
+.tool16x1v,
+.tool16x2v,
+.tool16x3v,
+.tool16x4v,
+.tool24x1v,
+.tool24x2v,
+.tool24x3v,
+.tool24x4v			{padding: 0px 1px 0px 1px;}
+
+.tool16x1v .divider,
+.tool16x2v .divider,
+.tool16x3v .divider,
+.tool16x4v .divider,
+.tool24x1v .divider,
+.tool24x2v .divider,
+.tool24x3v .divider,
+.tool24x4v .divider	{float: left; line-height: 0px; height: 0px; width: 100%;}
+
+
+/*	TAB DEF	*/
+.tabpane				{position: relative; display: none;}
+.tabbar,
+.btabbar				{clear: both; position: relative; white-space: normal;}
+.tabfrm,
+.tabrow					{height: 20px; z-index: 2;}
+
+gui\:tab,
+gui\:tab b\:s,
+gui\:tab b\:m,
+gui\:tab b\:e			{float: left;}
+/*
+.colpane > .tabpane:first-child	{display: block;}
+*/
+
+/*	FORM DEF	*/
+gui\:button				{position: relative;}
+b\:buttonrow			{clear: both;}
+
+gui\:label				{display: -moz-inline-box; display: inline-block;}
+gui\:label,
+gui\:label.down,
+gui\:label.up,
+gui\:label.dsbld		{padding: 1px 2px 2px 3px;}
+gui\:label.over			{padding: 0px 1px 1px 2px; border: #888 1px dotted;}
+gui\:label.dsbld		{color: #777;}
+
+gui\:btn_22.dsbld img	{-moz-opacity: .35; -webkit-opacity: .35; filter: alpha(opacity=35);}
+
+#chx_taskbar,
+#chx_icon				{display: none;}
