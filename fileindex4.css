@@ -1,0 +1,210 @@
+
+/*  ICON DEF	*/
+b\:i16				{position: relative; width: 16px; height: 16px; display: -moz-inline-box; display: inline-block;}
+b\:i24				{position: relative; width: 24px; height: 24px; display: -moz-inline-box; display: inline-block;}
+b\:i48				{position: relative; width: 48px; height: 48px; display: -moz-inline-box; display: inline-block; margin: 0px 0px 6px 0px;}
+
+b\:i16.i16_shortcut	{position: absolute; top: 1px; left: -1px;}
+b\:i24.i24_shortcut	{position: absolute; top: 0px; left: -2px;}
+b\:i48.i48_shortcut	{position: absolute; top: 5px; left: 4px;}
+body:first-of-type b\:i48.i48_shortcut,
+*+html b\:i48.i48_shortcut {left: -5px;}
+
+gui\:i48			{width: 60px; min-height: 70px; display: block; padding: 0px 2px 0px 2px; position: relative;}
+gui\:i48 b\:h48		{width: 64px; height: 50px; display: block; margin: 0px 0px 2px 0px;}
+gui\:i48 span		{width: 60px; max-height: 26px; padding: 1px 0px 2px 0px; overflow: hidden; display: block; text-overflow: ellipsis;}
+html.sf gui\:i48 span {max-height: 24px;}
+
+gui\:i24			{float: left; margin: 1px 0px 0px 0px; padding: 2px 0px 2px 6px; width: 180px; height: 26px; overflow: hidden; white-space: nowrap;}
+gui\:i24 b\:i24		{float: left; margin-right: 2px;}
+gui\:i24 span		{float: left; margin: 6px 0px 0px 4px; padding: 0px 2px 0px 2px; max-width: 148px;}
+
+gui\:i16			{display: block; padding: 1px 0px 0px 0px; height: 20px;}
+gui\:i16 b\:i16		{float: left;}
+gui\:i16 span		{float: left; margin: 1px 0px 0px 0px; padding: 1px 2px 1px 2px;}
+
+*+html gui\:i48 b\:h48	{margin: 0px 0px -4px 0px;}
+*+html gui\:i48 span	{margin: 6px 0px 0px 0px;}
+*+html #chx_icon b\:i48 {margin: 0px;}
+
+gui\:tool.dsbld		{-moz-opacity: .25; -webkit-opacity: .25; filter: alpha(opacity=25);}
+gui\:tool16.dsbld	{-moz-opacity: .25; -webkit-opacity: .25; filter: alpha(opacity=25);}
+
+/*	16PX	*/
+.i16_home			{background-position: 0px 0px;}			.i16_view_icon		{background-position: 0px -80px;}
+.i16_desktop		{background-position: -16px 0px;}		.i16_view_list		{background-position: -16px -80px;}
+.i16_network		{background-position: -32px 0px;}		.i16_view_tile		{background-position: -32px -80px;}
+.i16_hd				{background-position: -48px 0px;}		.i16_view_detail	{background-position: -48px -80px;}
+.i16_appman			{background-position: -64px 0px;}		.i16_view_split		{background-position: -64px -80px;}
+.i16_empty_trash	{background-position: -80px 0px;}		.i16_app			{background-position: -80px -80px;}
+.i16_full_trash		{background-position: -96px 0px;}		.i16_cancel			{background-position: -96px -80px;}
+.i16_folder_orange	{background-position: -112px 0px;}		.i16_ok				{background-position: -112px -80px;}
+.i16_folder			{background-position: -128px 0px;}		.i16_del			{background-position: -128px -80px;}
+.i16_open			{background-position: -144px 0px;}		.i16_add			{background-position: -144px -80px;}
+
+.i16_folder_doc		{background-position: 0px -16px;}		.i16_game			{background-position: 0px -96px;}
+.i16_folder_music	{background-position: -16px -16px;}		.i16_glines			{background-position: -16px -96px;}
+.i16_folder_image	{background-position: -32px -16px;}		.i16_gmines			{background-position: -32px -96px;}
+.i16_folder_movie	{background-position: -48px -16px;}		.i16_gpatience		{background-position: -48px -96px;}
+.i16_folder_public	{background-position: -64px -16px;}		.i16_gbackgammon	{background-position: -64px -96px;}
+.i16_folder_app		{background-position: -80px -16px;}		.i16_regional		{background-position: -80px -96px;}
+.i16_folder_fav		{background-position: -96px -16px;}		.i16_pie_chart		{background-position: -96px -96px;}
+.i16_shortcut		{background-position: -112px -16px;}	.i16_printer		{background-position: -112px -96px;}
+.i16_sys_shutdown	{background-position: -128px -16px;}	.i16_password		{background-position: -128px -96px;}
+.i16_sys_lock		{background-position: -144px -16px;}	.i16_skins			{background-position: -144px -96px;}
+
+.i16_edit_cut		{background-position: 0px -32px;}		.i16_finder			{background-position: 0px -112px;}
+.i16_edit_copy		{background-position: -16px -32px;}		.i16_man, .i16_help	{background-position: -16px -112px;}
+.i16_edit_paste		{background-position: -32px -32px;}		.i16_save			{background-position: -32px -112px;}
+.i16_star			{background-position: -48px -32px;}		.i16_search			{background-position: -48px -112px;}
+.i16_heart			{background-position: -64px -32px;}		.i16_qbubble		{background-position: -64px -112px;}
+.i16_write			{background-position: -80px -32px;}		.i16_attention		{background-position: -80px -112px;}
+.i16_rss			{background-position: -96px -32px;}		.i16_info			{background-position: -96px -112px;}
+.i16_clock			{background-position: -112px -32px;}	.i16_blog			{background-position: -112px -112px;}
+.i16_settings		{background-position: -128px -32px;}	.i16_addressbook	{background-position: -128px -112px;}
+.i16_calendar		{background-position: -144px -32px;}	.i16_edit_menu		{background-position: -144px -112px;}
+
+.i16_colors			{background-position: 0px -48px;}		.i16_mime_blank		{background-position: 0px -128px;}
+.i16_mail			{background-position: -16px -48px;}		.i16_mime_picture	{background-position: -16px -128px;}
+.i16_dev			{background-position: -32px -48px;}		.i16_mime_vcard		{background-position: -32px -128px;}
+.i16_users			{background-position: -48px -48px;}		.i16_mime_news		{background-position: -48px -128px;}
+.i16_champ			{background-position: -64px -48px;}		.i16_mime_iconset	{background-position: -64px -128px;}
+.i16_cli			{background-position: -80px -48px;}		.i16_mime_word		{background-position: -80px -128px;}
+.i16_exec			{background-position: -96px -48px;}		.i16_mime_project	{background-position: -96px -128px;}
+.i16_database		{background-position: -112px -48px;}	.i16_mime_resource	{background-position: -112px -128px;}
+.i16_calc			{background-position: -128px -48px;}	.i16_mime_chart		{background-position: -128px -128px;}
+.i16_magnify		{background-position: -144px -48px;}	.i16_mime_sln		{background-position: -144px -128px;}
+
+.i16_btn_home		{background-position: 0px -64px;}		.i16_mime_film		{background-position: 0px -144px;}
+.i16_btn_previous	{background-position: -16px -64px;}		.i16_mime_html		{background-position: -16px -144px;}
+.i16_btn_next		{background-position: -32px -64px;}		.i16_mime_vector	{background-position: -32px -144px;}
+.i16_btn_down		{background-position: -48px -64px;}		.i16_mime_midi		{background-position: -48px -144px;}
+.i16_btn_up			{background-position: -64px -64px;}		.i16_mime_mp3		{background-position: -64px -144px;}
+.i16_btn_pause		{background-position: -80px -64px;}		.i16_mime_unknown	{background-position: -80px -144px;}
+.i16_btn_stop		{background-position: -96px -64px;}		.i16_mime_man		{background-position: -96px -144px;}
+.i16_btn_reload		{background-position: -112px -64px;}	.i16_mime_cli		{background-position: -112px -144px;}
+.i16_upload			{background-position: -128px -64px;}	.i16_mime_excell	{background-position: -128px -144px;}
+.i16_download		{background-position: -144px -64px;}	.i16_mime_text		{background-position: -144px -144px;}
+
+.i16_mcheck			{background-position: 0px -160px;}
+.i16_mbullet		{background-position: -16px -160px;}
+.i16_tree_plus		{background-position: -32px -160px;}
+.i16_tree_minus		{background-position: -48px -160px;}
+.i16_arr_right		{background-position: -64px -160px;}
+.i16_arr_down		{background-position: -80px -160px;}
+.i16_arr_left		{background-position: -96px -160px;}
+.i16_arr_up			{background-position: -112px -160px;}
+
+
+/*	24PX	*/
+.i24_home			{background-position: 0px 0px;}			.i24_view_icon		{background-position: 0px -120px;}
+.i24_desktop		{background-position: -24px 0px;}		.i24_view_list		{background-position: -24px -120px;}
+.i24_network		{background-position: -48px 0px;}		.i24_view_tile		{background-position: -48px -120px;}
+.i24_hd				{background-position: -72px 0px;}		.i24_view_detail	{background-position: -72px -120px;}
+.i24_appman			{background-position: -96px 0px;}		.i24_view_split		{background-position: -96px -120px;}
+.i24_empty_trash	{background-position: -120px 0px;}		.i24_app			{background-position: -120px -120px;}
+.i24_full_trash		{background-position: -144px 0px;}		.i24_cancel			{background-position: -144px -120px;}
+.i24_folder_orange	{background-position: -168px 0px;}		.i24_ok				{background-position: -168px -120px;}
+.i24_folder			{background-position: -192px 0px;}		.i24_del			{background-position: -192px -120px;}
+.i24_open			{background-position: -216px 0px;}		.i24_add			{background-position: -216px -120px;}
+
+.i24_folder_doc		{background-position: 0px -24px;}		.i24_game			{background-position: 0px -144px;}
+.i24_folder_music	{background-position: -24px -24px;}		.i24_glines			{background-position: -24px -144px;}
+.i24_folder_image	{background-position: -48px -24px;}		.i24_gmines			{background-position: -48px -144px;}
+.i24_folder_movie	{background-position: -72px -24px;}		.i24_gpatience		{background-position: -72px -144px;}
+.i24_folder_public	{background-position: -96px -24px;}		.i24_gbackgammon	{background-position: -96px -144px;}
+.i24_folder_app		{background-position: -120px -24px;}	.i24_regional		{background-position: -120px -144px;}
+.i24_folder_fav		{background-position: -144px -24px;}	.i24_pie_chart		{background-position: -144px -144px;}
+.i24_shortcut		{background-position: -168px -24px;}	.i24_printer		{background-position: -168px -144px;}
+.i24_sys_shutdown	{background-position: -192px -24px;}	.i24_password		{background-position: -192px -144px;}
+.i24_sys_lock		{background-position: -216px -24px;}	.i24_skins			{background-position: -216px -144px;}
+
+.i24_edit_cut		{background-position: 0px -48px;}		.i24_finder			{background-position: 0px -168px;}
+.i24_edit_copy		{background-position: -24px -48px;}		.i24_man, .i24_help	{background-position: -24px -168px;}
+.i24_edit_paste		{background-position: -48px -48px;}		.i24_save			{background-position: -48px -168px;}
+.i24_star			{background-position: -72px -48px;}		.i24_search			{background-position: -72px -168px;}
+.i24_heart			{background-position: -96px -48px;}		.i24_qbubble		{background-position: -96px -168px;}
+.i24_write			{background-position: -120px -48px;}	.i24_attention		{background-position: -120px -168px;}
+.i24_rss			{background-position: -144px -48px;}	.i24_info			{background-position: -144px -168px;}
+.i24_clock			{background-position: -168px -48px;}	.i24_blog			{background-position: -168px -168px;}
+.i24_settings		{background-position: -192px -48px;}	.i24_addressbook	{background-position: -192px -168px;}
+.i24_calendar		{background-position: -216px -48px;}	.i24_edit_menu		{background-position: -216px -168px;}
+
+.i24_colors			{background-position: 0px -72px;}		.i24_mime_blank		{background-position: 0px -192px;}
+.i24_mail			{background-position: -24px -72px;}		.i24_mime_picture	{background-position: -24px -192px;}
+.i24_dev			{background-position: -48px -72px;}		.i24_mime_vcard		{background-position: -48px -192px;}
+.i24_users			{background-position: -72px -72px;}		.i24_mime_news		{background-position: -72px -192px;}
+.i24_champ			{background-position: -96px -72px;}		.i24_mime_iconset	{background-position: -96px -192px;}
+.i24_cli			{background-position: -120px -72px;}	.i24_mime_word		{background-position: -120px -192px;}
+.i24_exec			{background-position: -144px -72px;}	.i24_mime_project	{background-position: -144px -192px;}
+.i24_database		{background-position: -168px -72px;}	.i24_mime_resource	{background-position: -168px -192px;}
+.i24_calc			{background-position: -192px -72px;}	.i24_mime_chart		{background-position: -192px -192px;}
+.i24_magnify		{background-position: -216px -72px;}	.i24_mime_sln		{background-position: -216px -192px;}
+
+.i24_btn_home		{background-position: 0px -96px;}		.i24_mime_film		{background-position: 0px -216px;}
+.i24_btn_previous	{background-position: -24px -96px;}		.i24_mime_html		{background-position: -24px -216px;}
+.i24_btn_next		{background-position: -48px -96px;}		.i24_mime_vector	{background-position: -48px -216px;}
+.i24_btn_down		{background-position: -72px -96px;}		.i24_mime_midi		{background-position: -72px -216px;}
+.i24_btn_up			{background-position: -96px -96px;}		.i24_mime_mp3		{background-position: -96px -216px;}
+.i24_btn_pause		{background-position: -120px -96px;}	.i24_mime_unknown	{background-position: -120px -216px;}
+.i24_btn_stop		{background-position: -144px -96px;}	.i24_mime_man		{background-position: -144px -216px;}
+.i24_btn_reload		{background-position: -168px -96px;}	.i24_mime_cli		{background-position: -168px -216px;}
+.i24_upload			{background-position: -192px -96px;}	.i24_mime_excell	{background-position: -192px -216px;}
+.i24_download		{background-position: -216px -96px;}	.i24_mime_text		{background-position: -216px -216px;}
+
+
+/*	48PX	*/
+.i48_home			{background-position: 0px 0px;}			.i48_view_icon		{background-position: 0px -240px;}		
+.i48_desktop		{background-position: -48px 0px;}		.i48_view_list		{background-position: -48px -240px;}
+.i48_network		{background-position: -96px 0px;}		.i48_view_tile		{background-position: -96px -240px;}
+.i48_hd				{background-position: -144px 0px;}		.i48_view_detail	{background-position: -144px -240px;}
+.i48_appman			{background-position: -192px 0px;}		.i48_view_split		{background-position: -192px -240px;}
+.i48_empty_trash	{background-position: -240px 0px;}		.i48_app			{background-position: -240px -240px;}
+.i48_full_trash		{background-position: -288px 0px;}		.i48_cancel			{background-position: -288px -240px;}
+.i48_folder_orange	{background-position: -336px 0px;}		.i48_ok				{background-position: -336px -240px;}
+.i48_folder			{background-position: -384px 0px;}		.i48_del			{background-position: -384px -240px;}
+.i48_open			{background-position: -432px 0px;}		.i48_add			{background-position: -432px -240px;}
+
+.i48_folder_doc		{background-position: 0px -48px;}		.i48_game			{background-position: 0px -288px;}		
+.i48_folder_music	{background-position: -48px -48px;}		.i48_glines			{background-position: -48px -288px;}
+.i48_folder_image	{background-position: -96px -48px;}		.i48_gmines			{background-position: -96px -288px;}
+.i48_folder_movie	{background-position: -144px -48px;}	.i48_gpatience		{background-position: -144px -288px;}
+.i48_folder_public	{background-position: -192px -48px;}	.i48_gbackgammon	{background-position: -192px -288px;}
+.i48_folder_app		{background-position: -240px -48px;}	.i48_regional		{background-position: -240px -288px;}
+.i48_folder_fav		{background-position: -288px -48px;}	.i48_pie_chart		{background-position: -288px -288px;}
+.i48_shortcut		{background-position: -336px -48px;}	.i48_printer		{background-position: -336px -288px;}
+.i48_sys_shutdown	{background-position: -384px -48px;}	.i48_password		{background-position: -384px -288px;}
+.i48_sys_lock		{background-position: -432px -48px;}	.i48_skins			{background-position: -432px -288px;}
+
+.i48_edit_cut		{background-position: 0px -96px;}		.i48_finder			{background-position: 0px -336px;}		
+.i48_edit_copy		{background-position: -48px -96px;}		.i48_man, .i48_help	{background-position: -48px -336px;}
+.i48_edit_paste		{background-position: -96px -96px;}		.i48_save			{background-position: -96px -336px;}
+.i48_star			{background-position: -144px -96px;}	.i48_search			{background-position: -144px -336px;}
+.i48_heart			{background-position: -192px -96px;}	.i48_qbubble		{background-position: -192px -336px;}
+.i48_write			{background-position: -240px -96px;}	.i48_attention		{background-position: -240px -336px;}
+.i48_rss			{background-position: -288px -96px;}	.i48_info			{background-position: -288px -336px;}
+.i48_clock			{background-position: -336px -96px;}	.i48_blog			{background-position: -336px -336px;}
+.i48_settings		{background-position: -384px -96px;}	.i48_addressbook	{background-position: -384px -336px;}
+.i48_calendar		{background-position: -432px -96px;}	.i48_edit_menu		{background-position: -432px -336px;}
+
+.i48_colors			{background-position: 0px -144px;}		.i48_mime_blank		{background-position: 0px -384px;}		
+.i48_mail			{background-position: -48px -144px;}	.i48_mime_picture	{background-position: -48px -384px;}
+.i48_dev			{background-position: -96px -144px;}	.i48_mime_vcard		{background-position: -96px -384px;}
+.i48_users			{background-position: -144px -144px;}	.i48_mime_news		{background-position: -144px -384px;}
+.i48_champ			{background-position: -192px -144px;}	.i48_mime_iconset	{background-position: -192px -384px;}
+.i48_cli			{background-position: -240px -144px;}	.i48_mime_word		{background-position: -240px -384px;}
+.i48_exec			{background-position: -288px -144px;}	.i48_mime_project	{background-position: -288px -384px;}
+.i48_database		{background-position: -336px -144px;}	.i48_mime_resource	{background-position: -336px -384px;}
+.i48_calc			{background-position: -384px -144px;}	.i48_mime_chart		{background-position: -384px -384px;}
+.i48_magnify		{background-position: -432px -144px;}	.i48_mime_sln		{background-position: -432px -384px;}
+
+.i48_btn_home		{background-position: 0px -192px;}		.i48_mime_film		{background-position: 0px -432px;}		
+.i48_btn_previous	{background-position: -48px -192px;}	.i48_mime_html		{background-position: -48px -432px;}
+.i48_btn_next		{background-position: -96px -192px;}	.i48_mime_vector	{background-position: -96px -432px;}
+.i48_btn_down		{background-position: -144px -192px;}	.i48_mime_midi		{background-position: -144px -432px;}
+.i48_btn_up			{background-position: -192px -192px;}	.i48_mime_mp3		{background-position: -192px -432px;}
+.i48_btn_pause		{background-position: -240px -192px;}	.i48_mime_unknown	{background-position: -240px -432px;}
+.i48_btn_stop		{background-position: -288px -192px;}	.i48_mime_man		{background-position: -288px -432px;}
+.i48_btn_reload		{background-position: -336px -192px;}	.i48_mime_cli		{background-position: -336px -432px;}
+.i48_upload			{background-position: -384px -192px;}	.i48_mime_excell	{background-position: -384px -432px;}
+.i48_download		{background-position: -432px -192px;}	.i48_mime_text		{background-position: -432px -432px;}
